@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+    <p class="comentario">O flex-flow é um atalho para as propriedades flex-direction e flex-wrap. Você não verá muito o seu uso, pois geralmente quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é nowrap. <br> E quando mudamos o flex-wrap para wrap, mantemos o padrão do flex-direction que é row. <br> <br> flex-flow: row nowrap; // Coloca o conteúdo em linha e não permite a quebra de linha. <br> flex-flow: row wrap; // Coloca o conteúdo em linha e permite a quebra de linha. <br> flex-flow: column nowrap; // Coloca o conteúdo em coluna e não permite a quebra de linha. </p>
+   
+    <h1>flex-wrap: row-nowrap;</h1>
+    <section class="container row-nowrap">
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+
+    <h1>flex-wrap: row-wrap;</h1>
+    <section class="container row-wrap">
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+
+    <h1>flex-wrap: column-nowrap;</h1>
+    <section class="container column-nowrap">
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+
+</body>
+</html>
