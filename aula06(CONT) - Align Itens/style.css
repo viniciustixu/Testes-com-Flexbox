@@ -1,0 +1,138 @@
+.comentario {
+    border: 1px solid black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+/*-----container-----*/
+.container {
+    display: flex;
+    max-width: 420px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex { 
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.alinhamento-central {
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+.alinhamento-central .item {
+	flex: 0;
+}
+
+/*-----flex-item-----*/
+
+
+.flex-item-1 {
+    flex: 1;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.item { 
+    flex: 1; /* Adicionei para esse exercício */
+    padding: 0 10px; /* Adicionei para esse exercício */
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item:first-child {
+    padding-top: 20px;
+}

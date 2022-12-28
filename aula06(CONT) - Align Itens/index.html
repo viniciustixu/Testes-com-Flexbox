@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+    <p class="comentario">O align-items alinha os flex itens de acordo com o eixo do container. O alinhamento é diferente para quando os itens estão em colunas ou linhas. <br> Essa propriedade permite o tão sonhado alinhamento central no eixo vertical, algo que antes só era possível com diferentes hacks. <br> <br> align-items: stretch; // Valor padrão, ele que faz com que os flex itens cresçam igualmente. <br> align-items: flex-start; // Alinha os itens ao início. <br> align-items: flex-end; // Alinha os itens ao final. <br> align-items: center; // Alinha os itens ao centro. <br> align-items: baseline; // Alinha os itens de acordo com a linha base da tipografia. </p>
+   
+    <h1>align-itens: stretch;</h1> 
+    <section class="container stretch">
+        <div class="item">1</div>
+	    <div class="item">Teste 2 do Item</div>
+	    <div class="item">Teste 3 do Item Agora Mesmo</div>
+	    <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-itens: flex-start;</h1> 
+    <section class="container flex-start">
+        <div class="item">1</div>
+	    <div class="item">Teste 2 do Item</div>
+	    <div class="item">Teste 3 do Item Agora Mesmo</div>
+	    <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-itens: flex-end;</h1> 
+    <section class="container flex-end">
+        <div class="item">1</div>
+	    <div class="item">Teste 2 do Item</div>
+	    <div class="item">Teste 3 do Item Agora Mesmo</div>
+	    <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-itens: center;</h1> 
+    <section class="container align-center">
+        <div class="item">1</div>
+	    <div class="item">Teste 2 do Item</div>
+	    <div class="item">Teste 3 do Item Agora Mesmo</div>
+	    <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-itens: baseline;</h1> 
+    <section class="container baseline">
+        <div class="item">1</div>
+	    <div class="item">Teste 2 do Item</div>
+	    <div class="item">Teste 3 do Item Agora Mesmo</div>
+	    <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: flex-stretch; // column</h1>
+    <section class="container stretch column">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: flex-start; // column</h1>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: flex-end; // column</h1>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: center; // column</h1>
+    <section class="container align-center column">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: baseline; // column</h1>
+    <section class="container baseline column">
+        <div class="item">1</div>
+        <div class="item">Teste 2 do Item</div>
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+        <div class="item">Teste 4</div>
+    </section>
+
+    <h1>align-items: center; e justfy-content: center;</h1>
+    <section class="container alinhamento-central">
+        <div class="item">Teste 3 do Item Agora Mesmo</div>
+    </section>
+</body>
+</html>
