@@ -39,3 +39,7 @@ body {
 .flex-item-1 {
     flex: 1;
 }
+
+#seta:hover {
+    background-color: rgba(255, 99, 71, 0.63);
+}

@@ -136,3 +136,7 @@ body {
 .item:first-child {
     padding-top: 20px;
 }
+
+#seta:hover {
+    background-color: rgba(255, 99, 71, 0.63);
+}
