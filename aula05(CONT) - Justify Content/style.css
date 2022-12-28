@@ -1,0 +1,103 @@
+.comentario {
+    border: 1px solid black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+/*-----container-----*/
+.container {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    min-height: 200px; /* Adicionei esse pra fazer sentido nesse exercício */
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex { 
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+/*-----flex-item-----*/
+
+
+.flex-item-1 {
+    flex: 1;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.item { 
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
