@@ -1,0 +1,41 @@
+.comentario {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
