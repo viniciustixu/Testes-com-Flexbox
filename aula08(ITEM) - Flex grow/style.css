@@ -1,0 +1,79 @@
+.stretch {
+	align-content: stretch;
+}
+
+strong {
+	font-weight: 900; font-size: 1.2em;
+}
+
+.flex-start {
+	align-content: flex-start;
+}
+
+.flex-end {
+	align-content: flex-end;
+}
+
+.center {
+	align-content: center;
+}
+
+.space-between {
+	align-content: space-between;
+}
+
+.space-around {
+	align-content: space-around;
+}
+
+/* Flex Container */
+.container {
+	max-width: 420px;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+.comentario {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px
+}
+
+#seta:hover {
+    background-color: rgba(255, 99, 71, 0.63);
+}
+
+.grow0 {
+	flex-grow: 0;
+}
+
+.grow1 {
+	flex-grow: 1;
+}
+
+.grow2 {
+	flex-grow: 2;
+}

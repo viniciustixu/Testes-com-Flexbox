@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+    <p class="comentario"><strong>Flex Item</strong> Os Flex Itens são os filhos diretos do Flex Container, lembrado que uma tag se torna um flex container a partir do momento que você definir display: flex. <br> <br> É possível que um Flex Item seja também um Flex Container, basta definir display: flex nele. Assim os filhos desse item também serão flex itens. </p>
+    <p class="comentario"><strong>Flex-Grow:</strong> Define a habilidade de um flex item crescer. Por padrão o valor é zero, assim os flex itens ocupam um tamanho máximo relacionado o conteúdo interno deles ou ao width definido. <br> <br> Ao definir 1 para todos os Flex Itens, eles tentarão ter a mesma largura e vão ocupar 100% do container. Digo tentarão pois caso um elemento possua um conteúdo muito largo, ele irá respeitar o mesmo. <br> <br> Se você tiver uma linha com quatro itens, onde três são flex-grow: 1 e um flex-grow: 2, o flex-grow: 2 tentará ocupar 2 vezes mais espaço extra do que os outros elementos. <br> <br> OBS: justify-content não funciona em items com flex-grow definido.</p>
+    <p class="comentario"><strong>flex-grow: número;</strong> // Basta definir um número <br> <strong>flex-grow: 0;</strong> // Obedece o width do elemento ou o flex-basis.</p>
+
+    <h1>flex-grow: 0;</h1>
+    <section class="container">
+        <div class="item grow0">1</div>
+        <div class="item grow0">2</div>
+        <div class="item grow0">3</div>
+    </section>
+
+    <h1>flex-grow: 1;</h1>
+    <section class="container">
+        <div class="item grow1">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow1">3</div>
+    </section>
+
+    <h1>flex-grow: 2;</h1>
+    <section class="container">
+        <div class="item grow2">1</div>
+        <div class="item grow2">2</div>
+        <div class="item grow2">3</div>
+    </section>
+
+    <h1>flex-grow: 1; // Conteúdo largo</h1>
+    <section class="container">
+        <div class="item grow1">1</div>
+        <div class="item grow1">TestandoTestando2</div>
+        <div class="item grow1">3</div>
+    </section>
+
+    <h1>flex-grow: (Misturado);</h1>
+    <section class="container">
+        <div class="item grow0">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow2">3</div>
+    </section>
+
+</body>
+<footer style="width: 48px; height: 48px; margin: 20px auto;">
+    <a href="../index.html"><img src="../seta.png" alt="Icone de voltar" id="seta"></a>
+</footer>
+</html>
