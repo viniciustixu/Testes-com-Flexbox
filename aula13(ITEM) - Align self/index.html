@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+	<p class="comentario"><strong>align-self</strong><br>O align-self serve para definirmos o alinhamento específico de um único flex item dentro do nosso container. Caso um valor seja atribuído, ele passara por cima do que for atribuído no align-items do container. <br><br>Vale lembrar que o alinhamento acontece tanto em linha quanto em colunas. Por exemplo o flex-start quando os itens estão em linhas, alinha o item ao topo da sua linha. Quando em colunas, alinha o item ao início (esquerda) da coluna.</p>
+	<p class="comentario"><strong>align-self: auto;</strong>
+		// Valor inicial padrão. Vai respeitar o que for definido pelo align-items no flex-container. <br> <br>
+		<strong>align-self: flex-start;</strong>
+		// Alinha o item ao início. <br> <br>
+		<strong>align-self: flex-end;</strong>
+		// Alinha o item ao final. <br> <br>
+		<strong>align-self: center;</strong>
+		// Alinha o item ao centro. <br> <br>
+		<strong>align-self: baseline;</strong>
+		// Alinha o item a linha de base. <br> <br>
+		<strong>align-self: stretch;</strong>
+		// Estica o item.</p>
+	
+		<h1>align-self: multiplos;</h1>
+		<section class="container">
+			<div class="item flex-end">1</div>
+			<div class="item flex-start">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item center">Teste 4</div>
+		</section>
+		
+		<h1>align-self: multiplos;</h1>
+		<section class="container">
+			<div class="item baseline">1</div>
+			<div class="item baseline">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item center">Teste 4</div>
+		</section>
+		
+		<h1>align-self: stretch; // align-items: flex-end;</h1>
+		<section class="container align-items">
+			<div class="item">1</div>
+			<div class="item stretch">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item">Teste 4</div>
+		</section>
+		
+		<h1>align-self: multiplos;</h1>
+		<section class="container column">
+			<div class="item flex-end">1</div>
+			<div class="item flex-start">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item center">Teste 4</div>
+		</section>
+		
+		<h1>align-self: multiplos;</h1>
+		<section class="container column">
+			<div class="item baseline">1</div>
+			<div class="item baseline">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item center">Teste 4</div>
+		</section>
+		
+		<h1>align-self: stretch; // align-items: flex-end;</h1>
+		<section class="container column align-items">
+			<div class="item">1</div>
+			<div class="item stretch">Teste 2 do Item</div>
+			<div class="item">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+			<div class="item">Teste 4</div>
+		</section>
+
+</body>
+<footer style="width: 48px; height: 48px; margin: 20px auto;">
+    <a href="../index.html"><img src="../seta.png" alt="Icone de voltar" id="seta"></a>
+</footer>
+</html>
