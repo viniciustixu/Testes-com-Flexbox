@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+    <p class="comentario"><strong>flex-shrink: </strong>Define a capacidade de redução de tamanho do item.</p>
+    <p class="comentario"><strong>flex-shrink: 1;</strong> // Valor padrão, permite que os itens tenham os seus tamanhos (seja esse tamanho definido a partir de width ou flex-basis) reduzidos para caber no container. <br> <br> <strong>flex-shrink: 0;</strong> // Não permite a diminuição dos itens, assim um item com flex-basis: 300px; nunca diminuirá menos do que 300px, mesmo que o conteúdo não ocupe todo esse espaço. <br> <br> <strong>flex-shrink: número;</strong> // Um item com shrink: 3 diminuirá 3 vezes mais que um item com 1.</p>
+
+    <h1>flex-shrink: 1;</h1>
+<section class="container">
+	<div class="item shrink-1">1</div>
+	<div class="item shrink-1">2</div>
+	<div class="item shrink-1">3</div>
+	<div class="item shrink-1">4</div>
+</section>
+
+<h1>flex-shrink: 1; // Conteúdo diferente</h1>
+<section class="container">
+	<div class="item shrink-1">1</div>
+	<div class="item shrink-1">Teste 2</div>
+	<div class="item shrink-1">Oi 3</div>
+	<div class="item shrink-1">4</div>
+</section>
+
+<h1>flex-shrink: misturado; // Conteúdo diferente</h1>
+<section class="container">
+	<div class="item shrink-1">1</div>
+	<div class="item shrink-1">Teste 2</div>
+	<div class="item shrink-3">Oi 3</div>
+	<div class="item shrink-3">4</div>
+</section>
+
+<h1>flex-shrink: 1; // Conteúdo maior que o container</h1>
+<section class="container">
+	<div class="item shrink-1">TesteTesteTesteTeste</div>
+	<div class="item shrink-1">TesteTesteTeste 2</div>
+	<div class="item shrink-1">Oi 3</div>
+	<div class="item shrink-1">4</div>
+</section>
+
+<h1>flex-shrink: misturado; // Conteúdo maior que o container</h1>
+<section class="container">
+	<div class="item shrink-1">TesteTesteTesteTeste</div>
+	<div class="item shrink-1">TesteTesteTeste 2</div>
+	<div class="item shrink-3">Oi 3</div>
+	<div class="item shrink-3">4</div>
+</section>
+
+<h1>flex-shrink: 1; / flex-basis: valor;</h1>
+<section class="container">
+	<div class="item shrink-1-basis">TesteTesteTesteTeste</div>
+	<div class="item shrink-1-basis">TesteTesteTeste 2</div>
+	<div class="item shrink-1-basis">Oi 3</div>
+	<div class="item shrink-1-basis">4</div>
+</section>
+
+<h1>flex-shrink: 0; / flex-basis: valor;</h1>
+<section class="container">
+	<div class="item shrink-0-basis">TesteTesteTesteTeste</div>
+	<div class="item shrink-0-basis">TesteTesteTeste 2</div>
+	<div class="item shrink-0-basis">Oi 3</div>
+	<div class="item shrink-0-basis">4</div>
+</section>
+
+<h1>flex-shrink: 0; / flex-basis: valor; / wrap</h1>
+<section class="container flex-wrap">
+	<div class="item shrink-0-basis">TesteTesteTesteTeste</div>
+	<div class="item shrink-0-basis">TesteTesteTeste 2</div>
+	<div class="item shrink-0-basis">Oi 3</div>
+	<div class="item shrink-0-basis">4</div>
+</section>
+
+<h1>flex-shrink: misturado; / flex-basis: valor;</h1>
+<section class="container">
+	<div class="item shrink-1-basis">1</div>
+	<div class="item shrink-1-basis">Teste 2</div>
+	<div class="item shrink-3-basis">3</div>
+	<div class="item shrink-3-basis">4</div>
+</section>
+
+<h1>flex-shrink: misturado; / flex-basis: valor; / wrap</h1>
+<section class="container flex-wrap">
+	<div class="item shrink-1-basis">1</div>
+	<div class="item shrink-1-basis">Teste 2</div>
+	<div class="item shrink-3-basis">3</div>
+	<div class="item shrink-3-basis">4</div>
+</section>
+
+</body>
+<footer style="width: 48px; height: 48px; margin: 20px auto;">
+    <a href="../index.html"><img src="../seta.png" alt="Icone de voltar" id="seta"></a>
+</footer>
+</html>
