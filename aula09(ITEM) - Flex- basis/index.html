@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+    <p class="comentario"><strong>flex-basis:</strong> Indica o tamanho inicial do flex item antes da distribuição do espaço restante. Quando definimos o flex-grow: 1; e possuímos auto no basis, o valor restante para ocupar o container é distribuído ao redor do conteúdo do flex-item.</p>
+    <p class="comentario"><strong>flex-basis: auto;</strong> // Esse é o padrão, ele faz com que a largura da base seja igual a do item. Se o item não tiver tamanho especificado, o tamanho será de acordo com o conteúdo. <br> <br> <strong>flex-basis: unidade;</strong> // Pode ser em %, em, px e etc. <br> <br> <strong>flex-basis: 0;</strong> // Se o grow for igual ou maior que 1, ele irá tentar manter todos os elementos com a mesma largura, independente do conteúdo (por isso 0 é o valor mais comum do flex-basis). Caso contrário o item terá a largura do seu conteúdo.</p>
+
+    <h1>flex-basis: auto;</h1>
+<section class="container">
+	<div class="item basis-auto">Palavra 1</div>
+	<div class="item basis-auto">2</div>
+	<div class="item basis-auto-grow-2">3</div>
+	<div class="item basis-auto-width">4</div>
+	<div class="item basis-auto-grow-0">5</div>
+</section>
+
+<section class="container overlay">
+	<div class="item basis-auto">Palavra 1</div>
+	<div class="item basis-auto">2</div>
+	<div class="item basis-auto-grow-2">3</div>
+	<div class="item basis-auto-width">4</div>
+	<div class="item basis-auto-grow-0">5</div>
+</section>
+
+<h1>flex-basis: 0;</h1>
+<section class="container">
+	<div class="item basis-0">Test de Cont</div>
+	<div class="item basis-0">2</div>
+	<div class="item basis-0-grow-2">Palavra</div>
+	<div class="item basis-0-width">4</div>
+	<div class="item basis-0-grow-0">5</div>
+</section>
+
+<section class="container overlay">
+	<div class="item basis-0">Test de Cont</div>
+	<div class="item basis-0">2</div>
+	<div class="item basis-0-grow-2">Palavra</div>
+	<div class="item basis-0-width">4</div>
+	<div class="item basis-0-grow-0">5</div>
+</section>
+
+<h1>flex-basis: número;</h1>
+<section class="container basis-numero-container">
+	<div class="item basis-110">1</div>
+	<div class="item basis-110">12</div>
+	<div class="item basis-110">12345678910</div>
+	<div class="item basis-300">1234</div>
+	<div class="item basis-110-porcento">1</div>
+	<div class="item basis-110-porcento">12</div>
+	<div class="item basis-110-porcento">123</div>
+	<div class="item basis-110-porcento">1234</div>
+</section>
+
+<h1>flex-basis: número; // Diferente Conteúdo</h1>
+<section class="container basis-numero-container">
+	<div class="item basis-110">Conteúdo Grande</div>
+	<div class="item basis-110">PalavraMaior</div>
+	<div class="item basis-110">Oi</div>
+</section>
+
+<h1>flex-basis: número; // grow 1</h1>
+<section class="container basis-numero-container">
+	<div class="item basis-110-grow-1">1</div>
+	<div class="item basis-110-grow-1">12</div>
+	<div class="item basis-110-grow-1">1234</div>
+	<div class="item basis-110-grow-1">12345</div>
+	<div class="item basis-600-grow-1">5</div>
+</section>
+
+</body>
+<footer style="width: 48px; height: 48px; margin: 20px auto;">
+    <a href="../index.html"><img src="../seta.png" alt="Icone de voltar" id="seta"></a>
+</footer>
+</html>
