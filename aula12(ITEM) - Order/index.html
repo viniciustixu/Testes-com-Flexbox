@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Testes com flexbox</title>
+</head>
+<body>
+	<p class="comentario"><strong>order</strong><br> Modifica a ordem dos flex itens. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5. </p>
+	<p class="comentario"> <strong>order: número;</strong> // Número para modificar a ordem padrão. Pode ser negativo. <br> <br> <strong>order: 0;</strong> // 0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML. Se você quiser colocar um item do meio da lista no início da mesma, sem modificar os demais, o ideal é utilizar um valor negativo para este item, já que todos os outros são 0.</p>
+   
+	<h1>order: misturados;</h1>
+	<section class="container">
+		<div class="item order2">1</div>
+		<div class="item order4">2</div>
+		<div class="item order1">3</div>
+		<div class="item order3">4</div>
+	</section>
+	
+	<h1>order: negativo; / flex-grow</h1>
+	<section class="container">
+		<div class="item order2 flex-grow">1</div>
+		<div class="item order-1 flex-grow">2</div>
+		<div class="item order1 flex-grow">3</div>
+		<div class="item order3 flex-grow">4</div>
+	</section>
+	
+	<h1>order: valores iguais; / grow / column</h1>
+	<section class="container column">
+		<div class="item order2 flex-grow">1</div>
+		<div class="item order2 flex-grow">2</div>
+		<div class="item order1 flex-grow">3</div>
+		<div class="item order1 flex-grow">4</div>
+	</section>
+	
+	<h1>order: valores iguais; / grow / column</h1>
+	<section class="container column">
+		<div class="item flex-grow">1</div>
+		<div class="item order2 flex-grow">2</div>
+		<div class="item flex-grow">3</div>
+		<div class="item order-1 flex-grow">4</div>
+	</section>
+	
+
+</body>
+<footer style="width: 48px; height: 48px; margin: 20px auto;">
+    <a href="../index.html"><img src="../seta.png" alt="Icone de voltar" id="seta"></a>
+</footer>
+</html>
